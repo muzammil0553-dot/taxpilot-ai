@@ -1,0 +1,52 @@
+/* ==========================================
+   GLOBAL RESET
+========================================== */
+html,
+body{
+    overflow-x:hidden;
+}
+html,
+body,
+#root{
+    height:100%;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+button{
+
+font-family:'Inter',sans-serif;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+.container{
+
+width:100%;
+
+max-width:1400px;
+
+margin:auto;
+
+padding:0 30px;
+
+}

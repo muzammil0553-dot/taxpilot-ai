@@ -1,0 +1,462 @@
+/* =====================================
+   Admin Products Page
+===================================== */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    background:#f5f7fb;
+}
+
+.admin-container{
+    display:flex;
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+.admin-content{
+    flex:1;
+    padding:35px;
+}
+
+.admin-content h1{
+    margin:0;
+    color:#0f172a;
+    font-size:34px;
+    font-weight:700;
+}
+
+.admin-content p{
+    margin-top:8px;
+    color:#64748b;
+}
+/*======================
+
+Statistics
+
+======================*/
+
+.admin-stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+margin:30px 0;
+
+}
+
+.stat-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.stat-card h3{
+
+margin:0;
+
+color:#64748b;
+
+font-size:15px;
+
+}
+
+.stat-card h1{
+
+margin-top:15px;
+
+font-size:34px;
+
+color:#0f172a;
+
+}
+
+.success{
+
+border-left:6px solid #22c55e;
+
+}
+
+.warning{
+
+border-left:6px solid #f59e0b;
+
+}
+
+.purple{
+
+border-left:6px solid #7c3aed;
+
+}
+/* ===========================
+Toolbar
+=========================== */
+
+.admin-toolbar{
+    margin:30px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.admin-toolbar input{
+    width:350px;
+    max-width:100%;
+    padding:14px 18px;
+    border:1px solid #dbe4ef;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.admin-toolbar input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+}
+
+.admin-toolbar button{
+    padding:14px 24px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:#2563eb;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.admin-toolbar button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+Main Layout
+=========================== */
+
+.admin-main{
+    display:grid;
+    grid-template-columns:1.4fr .9fr;
+    gap:25px;
+    align-items:start;
+}
+
+/* ===========================
+Cards
+=========================== */
+
+.admin-table-card,
+.admin-details-card{
+    background:#fff;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+}
+
+/* ===========================
+Table
+=========================== */
+
+.admin-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.admin-table thead{
+    background:#eff6ff;
+}
+
+.admin-table th{
+    text-align:left;
+    padding:16px;
+    color:#1e3a8a;
+    font-size:15px;
+}
+
+.admin-table td{
+    padding:16px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.admin-table tbody tr{
+    cursor:pointer;
+    transition:.25s;
+}
+
+.admin-table tbody tr:hover{
+    background:#f8fbff;
+}
+
+.selected-row{
+    background:#dbeafe !important;
+}
+
+/* ===========================
+Status
+=========================== */
+
+.status-valid{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:90px;
+    padding:8px 12px;
+    border-radius:20px;
+    background:#DCFCE7;
+    color:#15803D;
+    font-weight:600;
+}
+
+.status-invalid{
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ===========================
+Details
+=========================== */
+
+.admin-details-card h2{
+    margin-top:0;
+    color:#0f172a;
+}
+
+.detail-item{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #eef2f7;
+}
+
+.detail-item strong{
+    color:#334155;
+}
+
+.detail-item span{
+    color:#0f172a;
+    font-weight:600;
+}
+
+/* ===========================
+Features
+=========================== */
+
+.feature-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:15px 0 25px;
+}
+
+.feature{
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.supported{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.unsupported{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+/* ===========================
+Validation
+=========================== */
+
+.validation-list{
+    margin:15px 0 0;
+    padding-left:20px;
+}
+
+.validation-list li{
+    margin-bottom:10px;
+    color:#334155;
+    font-weight:500;
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:1100px){
+
+.admin-main{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.admin-content{
+    padding:20px;
+}
+
+.admin-toolbar{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.admin-toolbar input,
+.admin-toolbar button{
+    width:100%;
+}
+
+.admin-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+}
+/*==============================
+
+Search
+
+==============================*/
+
+.search-box{
+
+display:flex;
+
+align-items:center;
+
+background:#fff;
+
+border-radius:12px;
+
+padding:0 15px;
+
+border:1px solid #dbe4ef;
+
+width:380px;
+
+}
+
+.search-icon{
+
+font-size:18px;
+
+margin-right:10px;
+
+}
+
+.search-box input{
+
+border:none !important;
+
+box-shadow:none !important;
+
+background:none;
+
+width:100%;
+
+padding:15px 0;
+
+outline:none;
+
+}
+
+.export-btn{
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+color:#fff;
+
+border:none;
+
+padding:14px 22px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.export-btn:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 20px rgba(37,99,235,.25);
+
+}
+
+.product-name{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+font-weight:600;
+
+color:#0f172a;
+
+}
+
+.price-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    white-space:nowrap;
+    min-width:120px;
+    padding:8px 16px;
+    border-radius:20px;
+    background:#EFF6FF;
+    color:#2563EB;
+    font-weight:600;
+}
+.admin-table td{
+
+    white-space:nowrap;
+    vertical-align:middle;
+}
+.bestfor-badge{
+    display:inline-block;
+    padding:7px 14px;
+    background:#EEF2FF;
+    color:#4338CA;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+    white-space:nowrap;
+}
+.unsupported{
+    background:#FEE2E2;
+    color:#B91C1C;
+    padding:8px 14px;
+    border-radius:20px;
+    font-weight:600;
+    display:inline-block;
+    margin:5px;
+}

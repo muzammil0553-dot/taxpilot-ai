@@ -1,0 +1,336 @@
+/* ==========================================================
+   PREMIUM FLOATING NAVBAR
+========================================================== */
+.header{
+    position:fixed;
+    top:0;
+    z-index:9999;
+    padding:0;
+    width:100vw;
+    left:0;
+    right:0;
+}
+.navbar{
+display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+height:70px;
+
+max-width:none;
+
+border-radius:0;
+
+padding:0 45px;
+
+background:#fff;
+
+border:none;
+
+border-bottom:1px solid #e5e7eb;
+
+box-shadow:0 2px 12px rgba(0,0,0,.06);
+ width:100%;
+    
+    margin:0;
+}
+
+/* ==========================
+   Logo
+========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.logo-icon{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:28px;
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+.logo-title{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#111827;
+
+}
+
+.logo-highlight{
+
+    color:#2563EB;
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+/* ==========================
+   Menu
+========================== */
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:38px;
+
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:#475569;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#2563EB;
+
+}
+
+.nav-menu .active{
+
+    color:#2563EB;
+
+}
+
+/* ==========================
+   Button
+========================== */
+
+.nav-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 30px;
+
+    border-radius:999px;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.25);
+
+}
+
+.nav-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   Mobile Button
+========================== */
+
+.menu-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:30px;
+
+}
+
+/* ==========================
+   Mobile Menu
+========================== */
+
+.mobile-menu{
+
+    display:none;
+
+}
+
+.mobile-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:100%;
+
+    margin-top:20px;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+.nav-menu{
+
+display:none;
+
+}
+
+.nav-btn{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.mobile-menu{
+
+display:none;
+
+margin-top:18px;
+
+padding:25px;
+
+background:#fff;
+
+border-radius:24px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.mobile-menu.show{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.mobile-menu a{
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#334155;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:0 20px;
+
+height:76px;
+
+}
+
+.logo-title{
+
+font-size:24px;
+
+}
+
+.logo-highlight{
+
+font-size:24px;
+
+}
+
+.logo-icon{
+
+width:48px;
+
+height:48px;
+
+}
+
+}

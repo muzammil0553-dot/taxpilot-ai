@@ -1,0 +1,243 @@
+/* ==========================================================
+   PRODUCT CARD
+========================================================== */
+
+.product-card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 35px 80px rgba(37,99,235,.15);
+
+}
+
+/* ========================= */
+
+.ai-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ========================= */
+
+.product-card h2{
+
+    font-size:32px;
+
+    color:#0F172A;
+
+    margin-bottom:12px;
+
+}
+
+.product-price{
+
+    font-size:36px;
+
+    font-weight:900;
+
+    color:#2563EB;
+
+    margin-bottom:18px;
+
+}
+
+/* ========================= */
+
+.rating{
+
+    display:flex;
+
+    gap:6px;
+
+    color:#FBBF24;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+/* ========================= */
+
+.product-card p{
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ========================= */
+
+.best-for{
+
+    margin-bottom:30px;
+
+}
+
+.best-for h4{
+
+    margin-bottom:15px;
+
+    color:#0F172A;
+
+}
+
+.best-for ul{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.best-for li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#334155;
+
+    font-weight:500;
+
+}
+
+.best-for li svg{
+
+    color:#22C55E;
+
+}
+
+/* ========================= */
+
+.card-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.details-btn{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color:#fff;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.details-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.compare-btn{
+
+    padding:15px 22px;
+
+    border-radius:16px;
+
+    border:2px solid #E2E8F0;
+
+    background:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.compare-btn:hover{
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+}
+
+/* ========================= */
+
+@media(max-width:768px){
+
+.card-buttons{
+
+flex-direction:column;
+
+}
+
+}

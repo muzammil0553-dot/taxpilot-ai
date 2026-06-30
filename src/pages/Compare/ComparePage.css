@@ -1,0 +1,317 @@
+/* ==========================================================
+   COMPARE PAGE
+========================================================== */
+
+.compare-page{
+    min-height:100vh;
+    padding:140px 0 100px;
+    background:linear-gradient(180deg,#F8FBFF 0%,#FFFFFF 100%);
+}
+
+/* ================= Header ================= */
+
+.compare-header{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 60px;
+}
+
+.page-badge{
+    display:inline-block;
+    padding:10px 22px;
+    background:#EEF4FF;
+    color:#2563EB;
+    border-radius:999px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.compare-header h1{
+    font-size:52px;
+    color:#0F172A;
+    margin-bottom:15px;
+}
+
+.compare-header p{
+    color:#64748B;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ================= Selectors ================= */
+
+.compare-selectors{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.compare-selectors label{
+
+    display:block;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    color:#0F172A;
+
+}
+
+.compare-selectors select{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:16px;
+
+    padding:0 18px;
+
+    background:#fff;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+
+    font-size:16px;
+
+}
+
+/* ================= Summary ================= */
+
+.compare-summary{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    margin-bottom:45px;
+
+}
+
+.summary-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.08);
+
+    transition:.3s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.summary-card h2{
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.summary-card h3{
+
+    color:#2563EB;
+
+    font-size:32px;
+
+    margin-bottom:15px;
+
+}
+
+.summary-card p{
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+/* ================= Table ================= */
+
+.compare-table{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow-x:auto;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.08);
+
+}
+
+.compare-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:750px;
+
+}
+
+.compare-table th{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    padding:20px;
+
+    font-size:17px;
+
+}
+
+.compare-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.compare-table tbody tr:hover{
+
+    background:#F8FBFF;
+
+}
+
+.compare-table td:first-child{
+
+    font-weight:700;
+
+    text-align:left;
+
+}
+
+/* ================= Recommendation ================= */
+
+.compare-recommendation{
+
+    margin-top:45px;
+
+    background:linear-gradient(90deg,#2563EB,#7C3AED);
+
+    color:#fff;
+
+    border-radius:24px;
+
+    padding:35px;
+
+}
+
+.compare-recommendation h2{
+
+    margin-bottom:15px;
+
+}
+
+.compare-recommendation p{
+
+    line-height:1.8;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:900px){
+
+.compare-selectors,
+.compare-summary{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.compare-page{
+
+padding-top:120px;
+
+}
+
+.compare-header h1{
+
+font-size:36px;
+
+}
+
+}
+.compare-actions{
+    text-align:center;
+    margin:30px 0;
+}
+
+.clear-btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:15px;
+    background:#0F172A;
+    color:#fff;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.clear-btn:hover{
+    background:#2563EB;
+}
+
+.summary-btn{
+    margin-top:20px;
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:14px;
+    background:#2563EB;
+    color:#fff;
+    cursor:pointer;
+    font-weight:700;
+}
+
+.summary-btn:hover{
+    background:#1D4ED8;
+}
+
+.winner{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#DCFCE7;
+    color:#15803D;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.recommend-btn{
+    margin-top:20px;
+    padding:16px 35px;
+    border:none;
+    border-radius:14px;
+    background:#fff;
+    color:#2563EB;
+    font-weight:700;
+    cursor:pointer;
+}

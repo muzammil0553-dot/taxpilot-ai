@@ -1,0 +1,103 @@
+.admin-sidebar{
+
+    width:260px;
+
+    min-height:100vh;
+
+    background:#0F172A;
+
+    color:#fff;
+
+    padding:30px 20px;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.admin-logo{
+
+    margin-bottom:40px;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+
+    padding-bottom:20px;
+
+}
+
+.admin-logo h2{
+
+    margin:0;
+
+    font-size:26px;
+
+    color:#fff;
+
+}
+
+.admin-logo p{
+
+    margin-top:8px;
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+.admin-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.admin-nav a{
+
+    text-decoration:none;
+
+    color:#CBD5E1;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.admin-nav a:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.admin-nav .active{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+@media(max-width:992px){
+
+.admin-sidebar{
+
+width:100%;
+
+min-height:auto;
+
+position:relative;
+
+}
+
+}
