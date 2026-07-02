@@ -2,6 +2,7 @@ import "./AssistantPage.css";
 
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
+import { API_BASE_URL } from './config';
 import { Link } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
@@ -54,16 +55,11 @@ export default function AssistantPage() {
         try {
 
             const response = await axios.post(
-
-                "http://localhost:5000/api/chat",
-
-                {
-
-                    message: currentMessage
-
-                }
-
-            );
+    `${API_BASE_URL}/api/chat`, 
+    {
+        message: currentMessage
+    }
+);
 
             setMessages(prev => [
 

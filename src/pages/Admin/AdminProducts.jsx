@@ -15,9 +15,9 @@ const [selectedProduct, setSelectedProduct] = useState(null);
   const loadProducts = async () => {
     try {
 
-      const res = await axios.get(
-        "http://localhost:5000/api/products"
-      );
+      const response = await axios.post(`${API_BASE_URL}/api/products`, {
+  message: currentMessage,
+});
 
       setProducts(res.data);
       if (res.data.length > 0) {

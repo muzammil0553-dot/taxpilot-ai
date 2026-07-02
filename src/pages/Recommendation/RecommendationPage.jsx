@@ -1,6 +1,7 @@
 import "./RecommendationPage.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { API_BASE_URL } from './config';
 import { useNavigate } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
@@ -77,9 +78,9 @@ const fetchRecommendation = async () => {
   try {
 
     const response = await axios.post(
-      "http://localhost:5000/api/recommend",
-      formData
-    );
+  `${API_BASE_URL}/api/recommend`, 
+  formData
+);
 
     setRecommendation(response.data);
 

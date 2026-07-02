@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import axios from "axios";
+import { API_BASE_URL } from './config';
 import { useState, useEffect } from "react";
 export default function ComparePage() {
 
@@ -20,9 +21,7 @@ useEffect(() => {
 
     try {
 
-      const response = await axios.get(
-        "http://localhost:5000/api/products"
-      );
+     const response = await axios.get(`${API_BASE_URL}/api/products`);
 
       setProducts(response.data);
 if (response.data.length >= 2) {

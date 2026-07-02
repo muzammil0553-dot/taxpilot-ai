@@ -2,7 +2,7 @@ import "./ProductsPage.css";
 
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+import { API_BASE_URL } from './config';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ProductCard from "../../components/ProductCard/ProductCard";
@@ -18,9 +18,8 @@ export default function ProductsPage() {
 
       try {
 
-        const response = await axios.get(
-          "http://localhost:5000/api/products"
-        );
+       // Ye code use karen:
+const response = await axios.get(`${API_BASE_URL}/api/products`);
 
         setProducts(response.data);
 
