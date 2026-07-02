@@ -15,9 +15,9 @@ const [selectedProduct, setSelectedProduct] = useState(null);
   const loadProducts = async () => {
     try {
 
-      const response = await axios.post(`${API_BASE_URL}/api/products`, {
-  message: currentMessage,
-});
+      const res = await axios.get(
+        "https://taxpilot-ai-production.up.railway.app"
+      );
 
       setProducts(res.data);
       if (res.data.length > 0) {

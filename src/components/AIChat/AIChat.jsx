@@ -1,7 +1,6 @@
 import "./AIChat.css";
 import { useState } from "react";
 import axios from "axios";
-import { API_BASE_URL } from './config';
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export default function AIChat() {
@@ -47,9 +46,12 @@ const sendMessage = async () => {
 
     try {
 
-      const response = await axios.post(`${API_BASE_URL}/api/chat`, {
-  message: currentMessage,
-});
+      const response = await axios.post(
+        "https://taxpilot-ai-production.up.railway.app",
+        {
+          message: currentMessage,
+        }
+      );
 
       setMessages((prev) => [
 

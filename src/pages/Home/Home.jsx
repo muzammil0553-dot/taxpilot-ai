@@ -6,6 +6,7 @@ import Products from "../../components/Products/Products";
 import Footer from "../../components/Footer/Footer";
 import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import FAQ from "../../components/FAQ/FAQ";
+
 export default function Home() {
   return (
     <>
