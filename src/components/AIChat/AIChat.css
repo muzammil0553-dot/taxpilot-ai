@@ -222,9 +222,9 @@ background:#f8fafc;
 .ai-message{
 
 align-self:flex-start;
-white-space: pre-wrap;
 background:#fff;
-
+ white-space: pre-wrap;
+    line-height: 1.7;
 padding:12px 15px;
 
 border-radius:15px;
@@ -232,8 +232,6 @@ border-radius:15px;
 max-width:80%;
 
 box-shadow:0 2px 8px rgba(0,0,0,.08);
-
-line-height:1.5;
 
 }
 
