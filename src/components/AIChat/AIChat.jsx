@@ -2,6 +2,7 @@ import "./AIChat.css";
 import { useState } from "react";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export default function AIChat() {
@@ -184,10 +185,14 @@ const sendMessage = async () => {
   >
 
     {msg.sender === "ai" ? (
-      <ReactMarkdown>{msg.text}</ReactMarkdown>
-    ) : (
-      msg.text
-    )}
+  <ReactMarkdown
+    remarkPlugins={[remarkGfm]}
+  >
+    {msg.text}
+  </ReactMarkdown>
+) : (
+  <span>{msg.text}</span>
+)}
 
   </div>
 

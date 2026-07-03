@@ -189,6 +189,21 @@ Key Features:
 • Employment income support
 • Basic deductions
 • Medical expenses
+Formatting Instructions:
+
+Use GitHub Markdown.
+
+Use headings.
+
+Use bullet points.
+
+Use tables for comparisons.
+
+Bold important information.
+
+Never write everything in one line.
+
+Leave one blank line between sections.
 
 User Question:
 
