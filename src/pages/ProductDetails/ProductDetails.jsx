@@ -3,7 +3,7 @@ import "./ProductDetails.css";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { API_BASE_URL } from './config';
+
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 
@@ -29,7 +29,10 @@ export default function ProductDetails() {
 
       try {
 
-        const response = await axios.get(`${API_BASE_URL}/api/products/${id}`);
+        const response = await axios.get(
+          `https://taxpilot-ai-production.up.railway.app/${id}`
+        );
+
         setProduct(response.data);
 
       } catch (error) {
