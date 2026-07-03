@@ -29,9 +29,9 @@ export default function ProductDetails() {
 
       try {
 
-        const response = await axios.get(
-          `https://taxpilot-ai-production.up.railway.app/${id}`
-        );
+       const response = await axios.get(
+  `https://taxpilot-ai-production.up.railway.app/api/products/${id}`
+);
 
         setProduct(response.data);
 
