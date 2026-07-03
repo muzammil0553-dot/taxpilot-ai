@@ -2,6 +2,7 @@ import "./AssistantPage.css";
 
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
+import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
@@ -281,11 +282,17 @@ export default function AssistantPage() {
 
                                     >
 
-                                        <div className="message-text">
-
-                                            {msg.text}
-
-                                        </div>
+                                        <div
+  className="message-text"
+  style={{
+    whiteSpace: "pre-wrap",
+    lineHeight: "1.7",
+  }}
+>
+  <ReactMarkdown>
+    {msg.text}
+  </ReactMarkdown>
+</div>
 
                                         {msg.product && (
 
