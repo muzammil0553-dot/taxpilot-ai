@@ -16,8 +16,8 @@ const [selectedProduct, setSelectedProduct] = useState(null);
     try {
 
       const res = await axios.get(
-        "https://taxpilot-ai-production.up.railway.app"
-      );
+  "https://taxpilot-ai-production.up.railway.app/api/products"
+);
 
       setProducts(res.data);
       if (res.data.length > 0) {
