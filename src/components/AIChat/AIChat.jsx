@@ -1,6 +1,7 @@
 import "./AIChat.css";
 import { useState } from "react";
 import axios from "axios";
+import ReactMarkdown from "react-markdown";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 export default function AIChat() {
@@ -171,25 +172,26 @@ const sendMessage = async () => {
 
           <div className="ai-chat-body">
 
-            {messages.map((msg, index) => (
+           {messages.map((msg, index) => (
 
-              <div
+  <div
+    key={index}
+    className={
+      msg.sender === "user"
+        ? "user-message"
+        : "ai-message"
+    }
+  >
 
-                key={index}
+    {msg.sender === "ai" ? (
+      <ReactMarkdown>{msg.text}</ReactMarkdown>
+    ) : (
+      msg.text
+    )}
 
-                className={
-                  msg.sender === "user"
-                    ? "user-message"
-                    : "ai-message"
-                }
+  </div>
 
-              >
-
-                {msg.text}
-
-              </div>
-
-            ))}
+))}
 
             {loading && (
 
