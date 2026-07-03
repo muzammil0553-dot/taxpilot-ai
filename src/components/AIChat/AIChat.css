@@ -222,7 +222,7 @@ background:#f8fafc;
 .ai-message{
 
 align-self:flex-start;
-
+white-space: pre-wrap;
 background:#fff;
 
 padding:12px 15px;

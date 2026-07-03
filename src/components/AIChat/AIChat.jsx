@@ -61,7 +61,13 @@ const sendMessage = async () => {
 
         {
           sender: "ai",
-          text: response.data.answer,
+         text: response.data.answer
+  .replace(/\\n/g, "\n")
+  .replace(/Recommendation:/g, "\nRecommendation:")
+  .replace(/Reason:/g, "\n\nReason:")
+  .replace(/Price:/g, "\n\nPrice:")
+  .replace(/Key Features:/g, "\n\nKey Features:")
+  .replace(/•/g, "\n•"),
         },
 
       ]);
