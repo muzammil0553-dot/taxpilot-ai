@@ -77,11 +77,11 @@ const fetchRecommendation = async () => {
   try {
 
     const response = await axios.post(
-      "https://taxpilot-ai-production.up.railway.app",
-      formData
-    );
+  "https://taxpilot-ai-production.up.railway.app/api/recommend",
+  formData
+);
 
-    setRecommendation(response.data);
+setRecommendation(response.data);
 
   } catch (error) {
 
