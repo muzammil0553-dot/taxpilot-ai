@@ -22,7 +22,8 @@ function App() {
     <Route path="/recommendation" element={<RecommendationPage />} />
     <Route path="/assistant" element={<AssistantPage />}/>
     <Route path="/admin/products"element={<AdminProducts />}/>
-    
+    <Route path="/admin" element={<AdminProducts />} />
+<Route path="/admin/products" element={<AdminProducts />} />
   </Routes>
 
   <AIChat />
