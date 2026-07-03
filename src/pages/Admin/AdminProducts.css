@@ -460,3 +460,62 @@ color:#0f172a;
     display:inline-block;
     margin:5px;
 }
+/* ===========================
+Mobile Responsive Fix
+=========================== */
+
+@media (max-width: 768px) {
+
+  .admin-container {
+    display: block;
+  }
+
+  .admin-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .admin-main {
+    display: block;
+  }
+
+  .admin-table-card,
+  .admin-details-card {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .admin-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .export-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .price-badge,
+  .bestfor-badge,
+  .status-valid,
+  .status-invalid {
+    font-size: 12px;
+  }
+
+}

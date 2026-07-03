@@ -101,3 +101,33 @@ position:relative;
 }
 
 }
+@media (max-width:768px){
+
+.admin-sidebar{
+    width:100%;
+    min-height:auto;
+    position:relative;
+    padding:15px;
+}
+
+.admin-logo{
+    margin-bottom:20px;
+    padding-bottom:15px;
+}
+
+.admin-logo h2{
+    font-size:22px;
+}
+
+.admin-nav{
+    flex-direction:row;
+    overflow-x:auto;
+    gap:10px;
+}
+
+.admin-nav a{
+    white-space:nowrap;
+    flex-shrink:0;
+}
+
+}
