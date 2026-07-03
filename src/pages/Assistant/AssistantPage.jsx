@@ -282,16 +282,8 @@ export default function AssistantPage() {
 
                                     >
 
-                                        <div
-  className="message-text"
-  style={{
-    whiteSpace: "pre-wrap",
-    lineHeight: "1.7",
-  }}
->
-  <ReactMarkdown>
+                                       <div className="message-text">
     {msg.text}
-  </ReactMarkdown>
 </div>
 
                                         {msg.product && (
