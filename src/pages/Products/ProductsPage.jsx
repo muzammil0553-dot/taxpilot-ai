@@ -18,11 +18,11 @@ export default function ProductsPage() {
 
       try {
 
-        const response = await axios.get(
-          "https://taxpilot-ai-production.up.railway.app"
-        );
+       const response = await axios.get(
+  "https://taxpilot-ai-production.up.railway.app/api/products"
+);
 
-        setProducts(response.data);
+setProducts(response.data);
 
       } catch (error) {
 
