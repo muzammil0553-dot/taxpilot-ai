@@ -26,13 +26,13 @@ ${question}
 
     return response.text;
 
-  } catch (error) {
+  }  catch (error) {
 
-    console.error("Gemini Error:", error);
+  console.error("Gemini Error:", error);
 
-    return "Sorry, I'm unable to answer that question right now.";
+  throw error;
 
-  }
+}
 }
 
 module.exports = {
