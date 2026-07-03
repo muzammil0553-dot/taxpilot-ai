@@ -47,11 +47,11 @@ const sendMessage = async () => {
     try {
 
       const response = await axios.post(
-        "https://taxpilot-ai-production.up.railway.app",
-        {
-          message: currentMessage,
-        }
-      );
+  "https://taxpilot-ai-production.up.railway.app/api/ai",
+  {
+    message: currentMessage,
+  }
+);
 
       setMessages((prev) => [
 
