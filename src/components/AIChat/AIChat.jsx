@@ -47,7 +47,7 @@ const sendMessage = async () => {
     try {
 
       const response = await axios.post(
-  "https://taxpilot-ai-production.up.railway.app/api/ai",
+  "https://taxpilot-ai-production.up.railway.app/api/chat",
   {
     message: currentMessage,
   }

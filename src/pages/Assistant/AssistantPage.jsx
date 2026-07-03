@@ -53,8 +53,8 @@ export default function AssistantPage() {
 
         try {
 
-            const response = await axios.post(
-  "https://taxpilot-ai-production.up.railway.app/api/ai",
+           const response = await axios.post(
+  "https://taxpilot-ai-production.up.railway.app/api/chat",
   {
     message: currentMessage,
   }
